@@ -1,4 +1,4 @@
-// it marges the element
+// marging of array element
 
 var concat_animal=["dog","monkey"]
 var concat_color=["black","white"]
