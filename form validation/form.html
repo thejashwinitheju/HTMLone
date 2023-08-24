@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title> Form Validation</title>
+  </head>
+  <body>
+    <form onsubmit=" return validate()">
+        <h1>Regeration Form</h1>
+        
+        <tr>
+            <th>User Name:</th>
+            <input type="text" id="username"><br>
+            <span id="msg" style="color: red;"></span>
+        </tr><br><br>
+        
+        
+        <tr>
+            <th>Mobile No:</th>
+            <input type="number" id="mobile"><br>
+            <span id="num" style="color: red;"></span>
+        </tr><br><br>
+
+
+       <tr>
+            <th>Email ID:</th>
+            <input type="email" id="eid"><br>
+            <span id="mail" style="color: red;"></span>
+        </tr><br><br>
+
+
+        <tr>
+            <th>Passowrd:</th>
+            <input type="password" id="word"><br>
+            <span id="pass" style="color: red;"></span>
+        </tr><br><br>
+
+
+        <tr>
+            <th>Confiram password:</th>
+            <input type="password" id="confiram"><br>
+            <span id="passw" style="color: red;"></span>
+        </tr><br><br>
+
+        <button>submit</button>
+        
+
+    </form>
+  </body>
+  <script>
+    function validate(){
+        let name = document.getElementById("username").value;
+        let mobile = document.getElementById("mobile").value;
+        let email = document.getElementById("eid").value;
+        let password = document.getElementById("word").value;
+        let confirampassword = document.getElementById("confiram").value;
+
+
+        if (name ==""){
+            document.getElementById("msg").innerHTML="Please enter your full name ."
+            return false;
+        }
+        
+        
+       if (mobile ==""){
+            document.getElementById("num").innerHTML="Please enter your 10 digit number ."
+            return false;
+       }
+
+       if (email =""){
+        document.getElementById("mail").innerHTML="Please enter your mail ID ."
+        return false;
+       }
+
+       if (password =""){
+        document.getElementById("pass").innerHTML="Please enter your password ."
+        return false;
+       }
+
+       if (confirampassword =""){
+        document.getElementById("passw").innerHTML="Please enter your correct password ."
+        return false;
+       }
+       
+    }
+  </script>
+</html>
