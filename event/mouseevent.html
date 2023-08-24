@@ -1,0 +1,24 @@
+<html>
+    <head>
+<script>
+    function display_Alert(){
+        alert("when mouse click on the element")
+    }
+    function display(){
+        document.write("Thejashwini")
+    }
+    function mouseover(){
+        document.write("when the curesor of the mouse comes over the element")
+    }
+    function mouseout(){
+        document.write("when the curesor of the element leaves the element")
+    }
+</script>
+    </head>
+    <body>
+        <button style="color: blueviolet;" ondblclick="display_Alert()">click</button><br><br><br>
+        <button style="background-color: brown;" ondblclick="display()">dblclick</button><br><br><br>
+        <button style="background-color:grey" onmouseover="mouseover()">mouseover</button><br><br><br>
+        <button style="color:chartreuse" onmouseout="mouseout()">mouseout</button>
+    </body>
+</html>
