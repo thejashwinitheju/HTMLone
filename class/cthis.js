@@ -1,3 +1,5 @@
+// This is a pionter pionting to current object.
+
 class acc{
     min_bal=1000;
     acc_bal=25000;
